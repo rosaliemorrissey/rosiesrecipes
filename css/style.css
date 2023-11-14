@@ -48,10 +48,10 @@ h2 {
   font-family: "quiche-flare", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 50pt;
   text-align: center;
   color: var(--tan);
-  padding: 20pt;
+  font-size: 30pt;
+  padding: 15pt;
 }
 
 a {
@@ -87,11 +87,267 @@ main {
   background-color: var(--tan);
 }
 
+.myLinks {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--tan);
+  margin: 5px 0;
+  /* transition: 0.4s; */
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #A0B369;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+.mobile-menu li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.mobile-menu a {
+  color: #ddd;
+  display: block;
+  padding: 14pt 16pt;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background-color: #F5E4B8;
+  color: #28282B;
+}
+
+.mobile-menu-icon {
+  margin-left: 10pt;
+  margin-top: 10pt;
+}
+
+.mobile-menu-icon .title {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  background-color: var(--light_green);
+  font-family: "anisette-petite", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18pt;
+  color: var(--black);
+  border: solid var(--black) 1pt;
+}
+
+.selected {
+  background-color: var(--dark_green);
+  color: var(--tan);
+}
+/* button:focus {
+  background-color: var(--dark_green);
+} */
+
+
+.slideshow-container {
+  display: none
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.profile, #profile, .history, .gmahistory {
+  display: none;
+}
+
+#mobile {
+  border: solid var(--dark_green) 15pt;
+}
+
+#baker_note {
+  display: grid;
+  padding: 5%;
+}
+
+@media screen and (min-width: 950px) {
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .topnav .myLinks{
+    background: var(--tan);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .dropbtn {
+    background-color: var(--light_green);
+    color: var(--black);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: "anisette-petite", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20pt;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: var(--dark_green);
+}
+
+
+  /* .dropbtn {
+    background-color: var(--light_green);
+    color: var(--black);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: "anisette-petite", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+  
+  /* The container <div> - needed to position the dropdown content */
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  } */
+  
+  /* Dropdown Content (Hidden by Default) */
+  /* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } */
+  
+  /* Links inside the dropdown */
+  /* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  } */
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {
+    background-color: #ddd;
+  } */
+  
+  /* Show the dropdown menu on hover */
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {
+    background-color: var(--dark_green);
+  } */
+  .mobile-menu {
+    display: none;
+  }
+
+  .bar {
+    display: none;
+  }
+  .ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .topnav {
+    background: var(--tan);
+s
+  }
+
+#baker_note {
+  display: none;
+}
+.title {
+   padding: 20pt;
+   font-size: 50pt;
+ }
+
+
 .recipe {
   display: grid;
   justify-content: center;
   grid-template-columns: 30% 60%;
 }
+
+/* .profile {
+  display: block;
+  grid-template-columns: 30% 60%;
+  column-gap: 15pt;
+  padding: 15pt;
+}
+
+.profile p {
+display: flex;
+flex-direction: column;
+}
+
+.profile img {
+  border: solid var(--dark_green) 15pt;
+  margin: 50%;
+  grid-area: 1 / 1/ 2/ 1;
+  margin-top: auto;
+} */
 
 .profile {
   display: grid;
@@ -100,8 +356,23 @@ main {
   padding: 15pt;
 }
 
-#profile {
+#face {
   border: solid var(--dark_green) 15pt;
+  /* grid-row: 2; */
+}
+
+.profile p:last-child{
+  grid-column: span 2;
+  align-self: left;
+}
+
+
+#note {
+  grid-column: span 2;
+}
+
+#intro {
+  align-self: center;
 }
 
 .history {
@@ -169,37 +440,6 @@ main {
   height: 50vh;
 }
 
-.ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-button {
-  background-color: var(--light_green);
-  font-family: "anisette-petite", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18pt;
-  color: var(--black);
-  border: solid var(--black) 1pt;
-}
-
-.selected {
-  background-color: var(--dark_green);
-  color: var(--tan);
-}
-/* button:focus {
-  background-color: var(--dark_green);
-} */
-
-.topnav {
-  background: var(--tan);
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around; */
-}
 
 
 .slideshow-container {
@@ -295,53 +535,6 @@ button {
   } */
 
 /* Dropdown Button */
-.dropbtn {
-  background-color: var(--light_green);
-  color: var(--black);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  font-family: "anisette-petite", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: var(--dark_green);
 }
