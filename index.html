@@ -12,46 +12,79 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Rosie's Recipes</title>
 </head>
-<body>
     <a href="#main" class="skip">Skip to content</a>
     <header>
-        <h1 class="title"> Rosie's Recipes </h1>
-      <nav>
-          <div class="topnav">
-              <div class="myLinks">
-                  <div class="ul">
-                      <a href="index.html"><img src="images/logo.png" alt="ram logo" width="50"></a>
-                      <div class="dropdown">
-                          <button class="dropbtn">Quick Breads</button>
-                          <div class="dropdown-content">
-                              <a href="bananabread.html">Banana Bread</a>
-                              <a href="zucchinibread.html">Zucchini Bread</a>
-                          </div>
-                      </div>
-                      <div class="dropdown">
-                          <button class="dropbtn">Brownies</button>
-                          <div class="dropdown-content">
-                              <a href="chipbrownierecipe.html">Chocolate Chipotle Brownies</a>
-                          </div>
-                      </div>
-                      <div class="dropdown">
-                          <button class="dropbtn">Cookies</button>
-                          <div class="dropdown-content">
-                              <a href="chocolatechipcookie.html">Chocolate Chip Cookies</a>
-                              <a href="nanacookies.html">Nana's Cookies</a>
-                          </div>
-                      </div>
-                      <div class="dropdown">
-                          <button class="dropbtn">Cakes</button>
-                          <div class="dropdown-content">
-                              <a href="gmachocolatecake.html">Grandma's Chocolate Cake</a>
-                          </div>
-                      </div>
+        <h1 class="title">Rosie's Recipes</h1>
+        <nav>
+            <div class="topnav">
+                <div class="myLinks">
+                    <div class="ul">
+                        <a href="index.html"><img src="images/logo.png" alt="ram logo" width="50px"></a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Quick Breads</button>
+                            <div class="dropdown-content">
+                                <a href="bananabread.html">Banana Bread</a>
+                                <a href="zucchinibread.html">Zucchini Bread</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Brownies</button>
+                            <div class="dropdown-content">
+                                <a href="chipbrownierecipe.html">Chocolate Chipotle Brownies</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Cookies</button>
+                            <div class="dropdown-content">
+                                <a href="chocolatechipcookie.html">Chocolate Chip Cookies</a>
+                                <a href="nanacookies.html">Nana's Cookies</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Cakes</button>
+                            <div class="dropdown-content">
+                                <a href="gmachocolatecake.html">Grandma's Chocolate Cake</a>
+                            </div>
+                        </div>
                     </div>
-              </div>
-          </div>
-
-      </nav>
+                </div>
+            </div>
+                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="mobile-menu">
+                    <a href="index.html"><img src="images/logo.png" alt="ram logo" width="50"></a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Quick Breads</button>
+                        <div class="dropdown-content">
+                            <a href="bananabread.html">Banana Bread</a>
+                            <a href="zucchinibread.html">Zucchini Bread</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Brownies</button>
+                        <div class="dropdown-content">
+                            <a href="chipbrownierecipe.html">Chocolate Chipotle Brownies</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Cookies</button>
+                        <div class="dropdown-content">
+                            <a href="chocolatechipcookie.html">Chocolate Chip Cookies</a>
+                            <a href="nanacookies.html">Nana's Cookies</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Cakes</button>
+                        <div class="dropdown-content">
+                            <a href="gmachocolatecake.html">Grandma's Chocolate Cake</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
           <!-- Slideshow container -->
 <div id="slideshow" class="slideshow-container">
@@ -92,18 +125,18 @@
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
     </header>
-        <main id="main" class="profile">
-        <img src="images/rosalie.jpg" id="profile" alt="image of Rosalie Morrissey">
+        <main id="main" >
 
-        <div>
-            <p>Hello! I am Rosalie. I have been an avid baker for about as long as I can remember.
+        <div class="profile">
+            <img src="images/rosalie.jpg" id="face" alt="image of Rosalie Morrissey">
+            <p id="intro">Hello! I am Rosalie. I have been an avid baker for about as long as I can remember.
                 While over the last decade my family will tell you my skills and results have improved
                 immensely, the joy I have gotten from trying something new and creating something that
                 brought joy to others has remained constant. On the site you will find a variety of recipes.
                 Some of these recipes pre-date me and are long-held family recipes, while others came from my
                 own experimentation.
             </p>
-            <p>Baker's Note: Baking is very much a science, and the day I started approaching a recipe like a lab
+            <p id="note">Baker's Note: Baking is very much a science, and the day I started approaching a recipe like a lab
                 instructions was a highly successful day in my baking journey. That being said the environment you bake
                 in can deeply impact your success. Think about if you are at a high elevation, using a different material for your pans,
                 and please use an oven thermometer.
@@ -114,6 +147,13 @@
                 typically manufactured in nut facilities, you can skip the nuts all together or use another mix-in such as dried fruit.
             </p>
         </div>
+        <div id="baker_note">
+            <img src="images/rosalie.jpg" id="mobile" alt="image of Rosalie Morrissey">
+        <p>Baker's Note: Baking is very much a science, and the day I started approaching a recipe like a lab
+            instructions was a highly successful day in my baking journey. That being said the environment you bake
+            in can deeply impact your success. Think about if you are at a high elevation, using a different material for your pans,
+            and please use an oven thermometer.
+        </p>
         <script src="js/jquery-3.6.4.js"></script>
         <script src="js/recipe.js"></script>
     </main>
